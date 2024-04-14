@@ -1,0 +1,254 @@
+/* Import local Urbanist font style */
+@font-face {
+    font-family: "Urbanist";
+    src:
+        local("Urbanist"),
+        url("/fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
+}
+
+/****************************************************************/
+/************************ HTML overrides ************************/
+/****************************************************************/
+
+/* General content stylization */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: orange;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: Urbanist, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Variables for gradients, segment later */
+    --nav-black: #171717;
+    --logo: rgba(253, 132, 57, 1);
+    --left: rgba(255, 204, 27, 0.8);
+    --mid: rgba(240, 89, 68, 0.8);
+    --right: rgba(243, 4, 82, 0.8);
+}
+
+h1 {
+    display: flex;
+    color: #344054;
+    font-size: 64px;
+    font-weight: 600;
+    top: 525px;
+    left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+    top: 525px;
+    left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    display: flex;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    top: 525px;
+    left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    display: block;
+    width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 24px;
+}
+
+p {
+    color: #FCFCFD;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+
+
+/****************************************************************/
+/*********************** General Classes ************************/
+/****************************************************************/
+
+.about {
+    background-image: url("/images/bg.png");
+    background-size: cover;
+}
+
+.center-iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.design {
+    display: flex;
+    justify-content: center;
+}
+
+.faq {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gradient {
+    background: linear-gradient(to right, var(--left), var(--mid), var(--right));
+}
+
+.history {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.nav {
+    color: #FD853A;
+    font-family: Urbanist, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page {
+    font-weight: bold;
+}
+
+.spacer {
+    padding-top: 40px;
+}
+
+.story {
+    display: flex;
+    justify-content: space-around;
+}
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+
+
+/****************************************************************/
+/**************************** Header ****************************/
+/****************************************************************/
+
+/* Top page navigation container */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-navbar {
+    width: 90%;
+    height: 102px;
+    display: inline-block;
+    background-color: var(--nav-black);
+    border-radius: 60px;
+}
+
+/* Override logo nav href hover */
+#logo-container {
+    background-color: var(--nav-black);
+}
+
+#logo-circle {
+    background-image: conic-gradient(var(--logo));
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.head-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 24px;
+    top: 40px;
+    left: 20px;
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+
+
+/****************************************************************/
+/**************************** Footer ****************************/
+/****************************************************************/
+
+/* Primary container */
+footer {
+    width: 100%;
+    background-color: var(--nav-black);
+}
+
+/* Top */
+.foot-container {
+    display: inline-block;
+}
+
+/* Left */
+.socials {
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* Bar separator */
+hr {
+    border-color: #475467;
+    width: 90%;
+}
+
+/* Bottom */
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
