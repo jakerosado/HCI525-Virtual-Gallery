@@ -3,7 +3,7 @@
     font-family: "Urbanist";
     src:
         local("Urbanist"),
-        url("/fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
+        url("../fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
 }
 
 /****************************************************************/
@@ -105,7 +105,7 @@ ul {
 /****************************************************************/
 
 .about {
-    background-image: url("/images/bg.png");
+    background-image: url("../images/bg.png");
     background-size: cover;
 }
 
